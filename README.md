@@ -1,6 +1,8 @@
 # webStudy
 前端入门-vue、angular、轮播图等等
 
+# 文件夹内容
+
 ## angular--QQmusic               
 angular框架的QQ音乐
 ## blog                           
