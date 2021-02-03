@@ -1,0 +1,63 @@
+{extends file="layout/layout.html"}
+
+{block name="title"}
+	管理员文章显示
+{/block}
+
+{block name="bigTitle"}
+	管理员文章显示
+{/block}
+
+{block name="body"}
+	<table class="table table-bordered">
+  		<tr>
+  			<th>id</th>
+  			<th>标题</th>
+  			<th>内容</th>
+  			<th>类型</th>
+  			<th>状态</th>
+  			<th>上传文件</th>
+  			<th>添加时间</th>
+  			<th>操作</th>
+  		</tr>
+
+  		{foreach $info as $k=>$v}
+	  		<tr id="tr{$v.id}">
+	  			<td>{$v.id}</td>
+	  			<td>{$v.title}</td>
+	  			<td>{$v.content}</td>
+	  			<td>{$v.type_name}</td>
+	  			<td>
+		  			{if $v.status ==1}
+		  				启用
+		  			{else}
+		  				禁用
+		  			{/if}
+	  			<td>
+	  				<img src="uploads/image/{$v.picname}" alt="由于网络原因，图片加载失败！" class="img-circle" style="width: 120px;height: 100px;"></td>
+	  			<td>{$v.addtime}</td>
+	  			<td>
+	  				<a href="index.php?c=article&a=edit&id={$v.id}" class="btn btn-info">修改</a>
+					<a href="javascript:;" class="btn btn-danger" onclick="fun({$v.id})">删除</a>
+					<a href="index.php?c=article&a=download&id={$v.id}" class="btn btn-info">文件下载</a>
+	  			</td>
+	  		</tr>
+  		{/foreach}
+	</table>
+
+	<script>
+	{literal}
+		function fun(id){
+			// 不能把图片名作为参数传给后台：因为js有默认行为，对于图片会默认保存，所以会提示未找到
+			$.get("index.php?c=article&a=del",{id:id},function(data){
+				if(data){
+					$('#tr'+id).remove();
+					unlink('uploads/image/'+picname);
+				}else{
+					alert("删除失败!");
+				}
+			})
+		}
+	{/literal}
+	</script>
+{/block}

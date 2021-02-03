@@ -1,0 +1,104 @@
+
+/* 页脚框架 */
+.footer{
+    width:100%;
+    height: 292px;
+    background: #dcdcdc;
+    margin-top: 100px;
+}
+.footer .footer_center{
+    height: 292px;
+}
+.advantage{
+    height: 150px;
+    background: #c9c9c9;
+}
+.advantage p{
+    text-align: center;
+}
+
+/* 页脚样式 */
+/* 二维码 */
+.footer .footer_ul{
+    padding-top: 31px;
+}
+.footer .footer_li{
+    width: 90px;
+    height: 208px;
+    background: #d2d2d2;
+    margin-right: 28px;
+    float: left;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 22px;
+}
+.footer_li span{
+    width: 90px;
+    height: 86px;
+    display: inline-block;   
+}
+.footer_li .footer_li_icon01{
+    background: url(../images/css_sprites.png) no-repeat -9px -120px;
+}
+.footer_li .footer_li_icon02{
+    background: url(../images/css_sprites.png) no-repeat -229px -10px;
+}
+.footer_li .footer_li_icon03{
+    background: url(../images/css_sprites.png) no-repeat -120px -120px;
+}
+.footer_li .footer_li_icon04{
+    background: url(../images/css_sprites.png) no-repeat -120px -10px;
+}
+.footer .footer_p01{
+    margin-top: 22px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #474747;
+    text-align: center;
+}
+.footer .footer_p02{
+    font-size: 14px;
+    color: #707070;
+    line-height: 24px;
+    text-align: center;
+}
+.footer .footer_code{
+    width: 344px;
+    height: 230px;
+    float: right;
+}
+.footer_code .code_p01{
+    color: #474747;
+    line-height: 44px;
+    text-align: center;
+}
+.footer_code .code_img{
+    margin-left: 61px;
+    display: block;
+}
+.footer_code .code_p02{
+    color: #a79696;
+    text-align: center;
+}
+/* 广告 */
+.advantage p{
+    font-size: 14px;
+    color: #8b7070;
+}
+.advantage .advantage_p01{
+    padding-top: 35px;
+    line-height: 32px;
+}
+.advantage .advantage_p02{
+    line-height: 32px;
+}
+/* 跳转 */
+.jumpArrive{
+    width: 60px;
+    height: 50px;
+    background: #444444;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+}

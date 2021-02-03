@@ -1,0 +1,333 @@
+body,ul,span,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.searchBox{
+    padding: 0;
+}
+.search{
+    padding: 0;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    *zoom: 1;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+/* 头部框架 */
+.main{
+    width: 1200px;
+    margin: 0 auto;
+}
+.big{
+    width: 100%;
+    background: #f1f1f1;
+}
+.top{
+    height: 40px;
+    background: #f3f3f3;
+}
+.topNext{
+    height: 92px;
+    background: white;
+    width: 100%;
+}
+.topNov{
+    height: 42px;
+    background: #ff4400;
+}
+.topNov .topNov_center{
+    height: 42px;
+}
+/* 头部/新浪首页 */
+.top .top_left>li{
+    float: left;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+}
+.top .fourText{
+    width: 56px;
+    margin-right: 29px;
+}
+.top .figureText{
+    width: 84px;
+    margin-right: 29px;
+}
+.top .threeText{
+    width: 42px;
+    margin-right: 52px;
+}
+.top .tel{
+    width: 65px;
+    position: relative;
+}
+.top_a{
+    font-size: 14px;
+    color: #474747;
+    text-align: center;
+    font-family: "微软雅黑";
+}
+.top_a:hover {
+    color: #ff8400;
+}
+.tel .tel_img{
+    width: 8px;
+    height: 12px;
+    background: url(../images/css_sprites.png) no-repeat -307px -117px;
+}
+.top_a:hover .tel_img{
+    background-position: -307px -149px;
+}
+.tel .tel_down{
+    width: 8px;
+    height: 4px;
+    margin-left: 7px;
+    background: url(../images/css_sprites.png) no-repeat -304px -227px;
+}
+.top_a:hover .tel_down{
+    background-position: -276px -227px;
+}
+.tel .tel_checkBox{
+    width: 468px;
+    height: 160px;
+    border:1px solid #d1d1d1;
+    position: absolute;
+    left: -25px;
+    top: 42px;
+    z-index:999;
+    display: none;
+    background: white;
+    padding-top: 28px
+    
+}
+.tel:hover .tel_checkBox{
+    display: block;
+} 
+.tel_choose .game{
+    width: 214px;
+    height: 80px;
+    float: left;
+    padding-left: 20px;
+
+}
+.game span{
+    width: 52px;
+    height: 50px;
+    float: left;
+}
+.game .choose01{
+    background: url(../images/CheckBox.png) no-repeat -81px -10px;
+}
+.game .choose02{
+    background: url(../images/CheckBox.png) no-repeat -80px -81px;
+}
+.game .choose03{
+    background: url(../images/CheckBox.png) no-repeat -10px -10px;
+}
+.game .choose04{
+    background: url(../images/CheckBox.png) no-repeat -10px -80px;
+}
+.game .p_dispay{
+    display: inline-block;
+    width: 147px;
+    height: 50px;
+    padding-left: 15px;
+
+}
+.game p{
+    line-height: 25px;
+}
+.game .pp{
+    display: inline-block;
+}
+.p_dispay a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.game .p01_a{ 
+    font-weight: bold;
+    color: #4d4d4d;
+}
+.game .p01:hover .p01_a{
+    color: #ff8400;
+
+}
+.p_dispay .p02_a{
+    color: #ff8400;
+}
+.p_dispay .p02_aa{
+    color: #ff8400;
+}
+.p_dispay .p02:hover .p02_a{
+   text-decoration: underline;
+}
+.p_dispay .p03:hover .p02_aa{
+    text-decoration: underline;
+ }
+.game .left_line{
+    color: #e8e8f2;
+    margin-left:12px;
+    margin-right:12px;
+
+}
+.tel_checkBox .checkBox_jiao{
+    position: absolute;
+    left: 24px;
+    top: -6px;
+    
+}
+.tel span{
+    vertical-align: middle;
+    display: inline-block;
+}
+.top .li_right{
+    width: 352px;
+    height: 41px;
+    margin-left: 406px;
+}
+.li_right .publicTell{
+    width: 18px;
+    height: 15px;
+    display: inline-block;
+    background: url(../images/css_sprites.png) no-repeat -238px -227px;
+    vertical-align: middle;
+    
+}
+
+/* 积分商城 logo*/
+.topNext .shopLogo{
+    width: 350px;
+    float: left;
+    background: red;
+}
+.topNext img{
+    /* 不写的话会有默认的3px的空白，除非给img设高度 */
+    display: block;
+}
+.topNext .center_img{
+    width: 498px;
+    float: left;
+    background: black;
+}
+.topNext .searchBox{
+    width: 278px;
+    height: 26px;
+    border: 1px solid #e6e6e6;
+    border-right-width: 0px;
+    margin-top: 32px;
+    outline: none;
+    font-size: 12px;
+    color: #a0a1a1;
+    text-indent: 1em;
+}
+
+.topNext .search{
+    width: 72px;
+    height: 28px;
+    background: #ff4400;
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+
+}
+
+/* 首页导航topNov */
+.topNov .fontSize{
+    font-size: 18px;
+    color: white;
+    font-family: "微软雅黑";
+}
+.topNov .topNov_li{
+    float: left;
+    position: relative;
+}
+.topNov_li .topNov_a{
+    color: white;
+    width: 134px;
+    text-align: center;
+    line-height:42px; 
+    background: #ff4400;
+    display: inline-block;
+} 
+.topNov_li .boldA{
+    font-weight: bold;
+    background: #e53e01;
+} 
+.topNov_li:hover .topNov_a{
+    font-weight: bold;
+    background: #e53e01;
+}
+.topNov_li .strightLine{
+    width: 3px;
+    height: 15px;
+    color: #cc3601;
+    float: right;
+    display:block;
+}
+.topNov_li:hover .strightLine{
+    color: transparent;
+}
+.topNov_li .active{
+    width: 164px;
+    height: 141px;
+    background:#e53e01 ;
+    /* 若不用定位的话，兄弟元素的子元素设置了浮动，active会被覆盖部分 */
+    position: absolute;
+    left: 0px;
+    top: 42px;
+    display: none;
+}
+.topNov_li:hover .active{
+    display: block;
+}
+.active p{
+    font-size: 18px;
+    color: #f2a096;
+    text-align: center;
+    padding-top: 18px;
+    padding-right: 29px;
+
+}
+
+.active01:hover .p01{
+    font-weight: bold;
+    color: #fff;
+}
+.active02:hover .p02{
+    font-weight: bold;
+    color: #fff;
+}
+/* 用户登录 */
+.topNov .userLogin{
+    width: 304px;
+    height: 42px;
+    padding-left: 83px;
+    display: inline-block;
+}
+.userLogin .user_a{
+    font-size: 15px;
+    color: #fff; 
+}
+.userLogin span{
+    vertical-align: bottom;
+}
+.userLogin .login_icon{
+    width: 16px;
+    height: 18px;
+    margin-top: 12px;
+    margin-right: 19px;
+    /* span是内联元素，不能设置宽高，若不转为内联块元素，则背景图不能显示 */
+    display: inline-block;
+    background: url(../images/css_sprites.png) no-repeat -202px -227px;
+}

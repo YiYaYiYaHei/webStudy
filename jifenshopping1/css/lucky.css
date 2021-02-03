@@ -1,0 +1,190 @@
+h1,h2,h3,h4,h5,h6,p,dl,dd{margin: 0; font-size: 15px;}
+ul,ol{margin: 0; padding:0; list-style: none;}
+a{text-decoration: none; color: #333;}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+i{
+    font-style: normal;
+}
+.clearfix{*zoom:1;}
+/* 幸运大拼盘 */
+.big .lucky_banner01{
+    width: 100%;
+    height: 478px;
+    background: url(../images/p1_big.jpg) no-repeat center top;
+}
+.lucky_banner01 .banner01_main{
+    height: 478px;
+    width: 1200px;
+    margin: 0 auto;
+    background: url(../images/p1-small.jpg) no-repeat;
+}
+.big .lucky_banner02{
+    width: 100%;
+    height: 473px;
+    background: url(../images/p2_big.jpg) no-repeat center top;
+}
+.lucky_banner02 .banner02_main{
+    /* 背景图片不写宽高不能显示，可以去除宽度但是margin：0 auto会无效 */
+    width: 1095px;
+    height: 326px;
+    margin: 0 auto; 
+    padding-top: 147px;
+    padding-left: 105px;
+    background:url(../images/p2_sma.jpg) no-repeat;
+} 
+.banner02_main .banner02_a{
+    width: 300px;
+    height: 200px;
+    display: block;
+    float: left;
+    background: url(../images/qd.png) no-repeat;
+   
+}
+.banner02_main .banner02_a:hover{
+    background: url(../images/qd1.jpg) no-repeat;
+}
+.banner02_main .game_rule{
+    width: 600px;
+    height: 200px;
+    text-align: left;
+    margin-left: 90px;
+    float: left;
+}
+.game_rule .gamr_p{
+    line-height: 27px;
+    color: #cac2e1;
+}
+/* 开始游戏 */
+.big .begin_game{
+    width: 100%;
+    height: 654px;
+    background: url(../images/p3_big.jpg) no-repeat center top;
+}
+.begin_game .begin_game_main{
+    width: 1200px;
+    height: 654px;
+    margin: 0 auto;
+    position: relative;
+    background: url(../images/p3_small.jpg) no-repeat;
+}
+.begin_game_main .game_pan{
+    position: absolute;
+    left: 72px;
+    top: 136px;
+}
+.begin_game_main .game_lucky{
+    position: absolute;
+    left: 677px;
+    top: 80px;
+}
+.begin_game_main .begin_gameBotoom{
+    position: absolute;
+    left: 404px;
+    top: 457px;
+    display: block;
+}
+/* 成就榜 邀请好友 */
+.big .achieve{
+   width:100%;
+   height: 350px;
+   background: url(../images/p4_big.jpg) no-repeat center top;
+}
+.achieve .achieve_main{
+    width: 1065px;
+    height: 232px;
+    margin: 0 auto;
+    padding-top: 118px;
+    padding-left: 135px;
+    background: url(../images/p4_smallpg.jpg) no-repeat;
+}
+.achieve_main .achieve_p{
+    color: #bb9dd9;
+    display: inline; 
+    width: 340px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+}
+.achieve_main .achieve_pp{
+    color: #dbdbdb;
+    font-size: 14px;
+    line-height: 30px;
+}
+.achieve_main .achieve_right{
+    width: 425px;
+    height: 70px;
+    float: right;
+    margin-top: -40px;
+    margin-right: 80px;
+}
+.achieve_right .achieve_A{
+    margin: 0 5px;
+}
+.padding_left{
+    padding-left: 0px;
+}
+.padding_right{
+    padding-right: 0px;
+}
+/* 微博转发 */
+.big .turnAnthor{
+    width: 100%;
+    height: 498px;
+    background: url(../images/p5_big.jpg) no-repeat center top;
+}
+.turnAnthor .turnAnthor_main{
+    width: 1200px;
+    height: 498px;
+    margin: 0 auto;
+    background: url(../images/p5_small.jpg) no-repeat;
+    position: relative;
+}
+.turnAnthor_main .turn_span{
+    width: 168px;
+    height: 168px;
+    display: inline-block;
+    margin-top: 115px;
+    margin-left: 95px;
+    float: left;
+    background: url(../images/tx.png) no-repeat;
+}
+.turnAnthor_main .h3{
+    padding-right: 220px;
+    line-height: 60px;
+    color: #dbdbdb;
+    font-size: 20px;
+    float: left;
+    margin-top: 120px;
+    margin-left: 120px;
+}
+.turn_span .img_box{
+    width: 120px;
+    height: 120px;
+    margin-top: 22px;
+    margin-left: 24px;
+}
+.turnAnthor_main .turn_p{
+    font-size: 15px;
+    color: #dbdbdb;
+    float: left;
+    line-height: 40px;
+    margin-left: 280px;
+    margin-top: -110px;
+    width: 800px;
+}
+.turnAnthor_main .white_a{
+    width: 229px;
+    height: 70px;
+    display: block;
+    position: absolute;
+    bottom: 154px;
+    left: 485px;
+
+}

@@ -1,0 +1,54 @@
+{extends file="layout/layout.html"}
+
+{block name="title"}
+	管理员类别显示
+{/block}
+
+{block name="bigTitle"}
+	管理员类别显示
+{/block}
+
+{block name="body"}
+	<table class="table table-bordered">
+  		<tr>
+  			<th>id</th>
+  			<th>类别名</th>
+  			<th>状态</th>
+  			<th>操作</th>
+  		</tr>
+
+  		{foreach $info as $k=>$v}
+  			<tr id="tr{$v.id}">
+	  			<td>{$v.id}</td>
+	  			<td>{$v.name}</td>
+	  			{if $v.status==1}
+	  				<td>启用</td>
+	  			{else}
+	  				<td>禁用</td>
+	  			{/if}
+	  			
+	  			<td>
+	  				<a href="index.php?c=type&a=edit&id={$v.id}" class="btn  btn-info">修改</a>
+					<a href="javascript:;" onclick="dels({$v.id})" class="btn  btn-danger">删除</a>
+	  			</td>
+  			</tr>
+
+  		{/foreach}
+	</table>
+	<script>
+		{literal} 
+			function dels(id){
+				$.get('index.php?c=type&a=del',{id:id},function(data){
+					// data可能有三值：0：删除失败；1：删除成功；2：类别下有文章，不能删除
+					if(data==1){
+						$('#tr'+id).remove();
+					}else if(data==2){
+						alert("该类别不能删除，有文章!");
+					}else{
+						alert("删除失败!");
+					}
+				});
+			}
+		{/literal} 
+	</script>
+{/block}

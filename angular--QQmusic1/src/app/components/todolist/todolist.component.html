@@ -1,0 +1,31 @@
+<div class="header">
+  <div class="main">
+      <p class="title">ToDoList</p>
+       <!-- 双向绑定  并添加键抬起事件（回车添加代办事项） -->
+      <input type="text" class="add" placeholder="添加代办事件" [(ngModel)]="content"  (keyup)="keyup($event)">
+  </div>
+</div>
+
+<div class="body">
+    <h2>正在进行<span class="count">{{n}}</span></h2> 
+
+  <ul>
+    <!-- 因为一个标签中不能即有ngIf 又有 ngFor 所以使用hidden属性将其隐藏   hidden=“true”时隐藏或者写[hidden]=="item.state==2"-->
+    <li *ngFor="let item of list;let i =index" [hidden]="!item.state">
+      <span class="correct" (click)="judgeState(i)">!</span>
+      <p class="con">{{item.name}}</p>
+      <a href="javascript:;" class="del" (click)="del(i)">-</a>
+    </li>
+  </ul>
+
+  <h2>已经完成<span class="count">{{bn}}</span></h2>
+  <ul>
+    <!-- 在 正在进行 中影藏的事项, 在 已经完成 中显示  即hidden=true 或者写[hidden]=="item.state==1" -->
+      <li *ngFor="let item of list;let i =index" [hidden]="item.state">
+        <span class="correct" (click)="judgeState(i)">√</span>
+        <p class="con">{{item.name}}</p>
+        <a href="javascript:;" class="del" (click)="del(i)">-</a>
+      </li>
+    </ul>
+</div>
+

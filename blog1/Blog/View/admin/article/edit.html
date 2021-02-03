@@ -1,0 +1,78 @@
+{extends file="layout/layout.html"}
+
+{block name="title"}
+	管理员文章修改
+{/block}
+
+{block name="bigTitle"}
+	管理员文章修改
+{/block}
+
+
+
+
+{block name="body"}
+	<form action="index.php?c=article&a=doedit" method="post">
+  <input type="hidden" name="id" value="{$info.id}">
+  <input type="hidden" name="oldpic" value="{$info.picname}">
+  <div class="form-group">
+    <label for="exampleInputEmail1">标题：</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="title" name="title" value="{$info.title}">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">内容：</label>
+    <textarea class="form-control" rows="3" id="exampleInputPassword1" name="content" placeholder="文章内容">{$info.content}</textarea>
+  </div>
+  <div class="form-group">
+  <label for="status">状态：</label>
+  	<select class="form-control" id="status" name="status">
+    {if $info.status==1}
+      <option value="1" selected>启用</option>
+      <option value="2">禁用</option>
+    {else}
+      <option value="1" >启用</option>
+      <option value="2" selected>禁用</option>
+    {/if}
+	  
+	</select>
+   </div>
+    <div class="form-group">
+  <label for="type_id">类别：</label>
+  	<select class="form-control" id="type_id" name="type_id">
+  	{foreach $info1 as $k=>$v}
+      {if $v.status==1}
+        {if $v.id==$info.type_id}
+          <option value="{$v.id}" selected>{$v.name}</option>
+        {else}
+          <option value="{$v.id}">{$v.name}</option>
+        {/if}
+      {else}
+         {if $v.id==$info.type_id}
+          <option value="{$v.id}" selected disabled style="color: red;">{$v.name}</option>
+        {else}
+          <option value="{$v.id}" disabled style="color: red;">{$v.name}</option>
+        {/if}
+      {/if}
+  		
+	 {/foreach}
+	</select>
+   </div>
+  <div class="form-group">
+    <label for="exampleInputFile">文件上传：</label>
+    <!-- 富文本 -->
+	{block name="ueditor"}
+	    <script id="editor" type="text/plain" style="width:800px;height:300px;"></script>
+	{/block}
+	{block name="ueditor_file"}
+	    <script type="text/javascript" charset="utf-8" src="Static/ueditor/ueditor.config.js"></script>
+	    <script type="text/javascript" charset="utf-8" src="Static/ueditor/ueditor.all.min.js"> </script>
+	    <script type="text/javascript" charset="utf-8" src="Static/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+	    <script type="text/javascript">
+	        var ue = UE.getEditor('editor');
+	    </script>
+	{/block}
+  </div>
+  <button type="submit" class="btn btn-info">Submit</button>
+</form>
+{/block}

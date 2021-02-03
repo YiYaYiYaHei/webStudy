@@ -1,0 +1,27 @@
+<div class="weui-search-bar" id="searchBar">
+    <form class="weui-search-bar__form" (click)="click()">
+        <div class="weui-search-bar__box">
+            <i class="weui-icon-search"></i>
+            <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+            <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+        </div>
+        <label class="weui-search-bar__label" id="searchText">
+            <i class="weui-icon-search"></i>
+            <span>搜索</span>
+          </label>
+    </form>
+    <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel" (click)="clickA($event)">取消</a>
+</div>
+
+<div class="search" [hidden]="flag">
+    <h5>热门搜索</h5>
+
+    <a href="javascript:;" class="btn ml5 first">见面吧!爱豆ONER</a>
+    <a href="javascript:;" class="btn">一起走过的日子</a>
+    <a href="javascript:;" class="btn ml5">为你我受冷风吹</a>
+    <a href="javascript:;" class="btn">LOST RIVERS</a>
+    <a href="javascript:;" class="btn">不在</a>
+    <a href="javascript:;" class="btn ml5">爱的故事集合</a>
+    <a href="javascript:;" class="btn">你一定要幸福</a>
+    <a href="javascript:;" class="btn">TOXIC</a>
+</div>

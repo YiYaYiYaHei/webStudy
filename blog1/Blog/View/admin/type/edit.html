@@ -1,0 +1,33 @@
+{extends file="layout/layout.html"}
+
+{block name="title"}
+	管理员类别修改
+{/block}
+
+{block name="bigTitle"}
+	管理员类别修改
+{/block}
+
+{block name="body"}
+	<form action="index.php?c=type&a=doedit" method="post">
+  <input type="hidden" name="id" value="{$info.id}">
+  <div class="form-group">
+    <label for="exampleInputEmail1">类别名：</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="类别名" name="name" value="{$info.name}">
+  </div>
+  <div class="form-group">
+   <label for="type_status">状态：</label>
+   <select class="form-control" id="type_status" name="status">
+   {if $info.status==1}
+      <option value="1" selected>启用</option>
+      <option value="2">禁用</option>
+   {else}
+      <option value="1" >启用</option>
+      <option value="2" selected>禁用</option>
+   {/if}
+	 
+	</select>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+{/block}

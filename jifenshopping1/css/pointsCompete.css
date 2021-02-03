@@ -1,0 +1,244 @@
+h1,h2,h3,h4,h5,h6,p,dl,dd{margin: 0; font-size: 12px;}
+ul,ol{margin: 0; padding:0; list-style: none;}
+a{text-decoration: none; color: #333;}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.clearfix{*zoom:1;}
+i{
+    font-style: normal;
+}
+/* 爱拼才会赢 */
+.focus{
+    width: 1200px;
+    margin: 0 auto; 
+    position: relative;
+}
+.body{
+    width: 100%;
+}
+.big .love_win{
+    width: 100%;
+    height: 570px;
+    background: url(../images/head_bg.jpg) no-repeat center top;
+}
+.love_win .focus a{
+    background: url(../images/head_btn.png) no-repeat;
+    width: 157px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    line-height: 55px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.love_win .love_win_a01{
+    position: absolute;
+    right: 0;
+    margin-top: 343px;
+}
+.love_win .love_win_a02{
+    position: absolute;
+    right: 0;
+    margin-top: 414px;
+}
+
+.love_win_a01:hover{
+    color: #ff4400;
+}
+.love_win_a02:hover{
+    color: #ff4400;
+}
+/* 精选拍品 */
+.body .care_goods{
+    width: 100%;
+    height: 728px;
+    background: red;
+    /* center top始终让大图片的最中间位置显示在屏幕上，若不写导致图片从最左端开始在屏幕上显示 */
+    background: url(../images/commodity_bj.jpg) no-repeat center top;
+}
+.care_goods .care_goods_li{
+    width: 198px;
+    height: 418px;
+    margin: 0 25px;
+    background: #fff;
+    padding: 25px;
+    float: left;
+    margin-top: 147px;
+    border: 1px solid white;
+}
+.care_goods_li:hover{
+    border: 1px solid #c8c8c8;
+}
+.care_goods .care_goods_div{
+    border-bottom: 1px dashed #dedcdc;
+    height: 294px;
+}
+.care_goods_li .goods_img{
+    margin-bottom: 20px;
+    display: block;
+}
+.care_goods_li .care_goods_a{
+    font-size: 16px;
+    padding-bottom: 14px;
+    font-weight: 700;
+}
+.care_goods_li .care_goods_a:hover{
+    color: #ff4400;
+}
+.care_goods_li .care_goods_p{
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+
+}   
+.care_goods_li .care_goods_pA{
+    margin-top: 10px;
+} 
+.care_goods_li .end{
+    font-weight:bold; 
+    display: block;
+    width: 157px;
+    height: 40px;
+    background: #ff4400;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px auto 0;
+}
+.care_goods_li:hover .end{
+    background: #d33800;
+}
+/* 往期回顾 */
+.big .rember{
+    width: 100%;
+    height: 725px;
+    background: url(../images/review_bj.jpg) no-repeat center top;
+    position: relative;
+}
+.rember .focus{
+    width: 1020px;
+    height: 405px;
+    background: #ffe642;
+    top: 200px;
+    padding: 50px 60px 0 60px;
+}
+.rember .rember_li{
+    float: left;
+    width: 193px;
+    height: 330px;
+    border: 1px solid #fff;
+    margin: 0 10px;
+    background: white;
+    padding: 20px;
+}
+.rember_li:hover{
+    border: 1px solid #c8c8c8;
+}
+.rember .rember_div{
+    width: 193px;
+    height: 274px;
+    border-bottom: 1px dashed #dedcdc;
+}
+.rember .rember_a{
+    padding-bottom: 16px;
+}
+.rember_a:hover{
+    color: #ff4400;
+}
+.p_colorOrange{
+    color: #ff4400;
+}
+.rember .rember_pp{
+    font-size: 14px;
+    line-height: 25px;   
+}
+.rember .rember_ppTop{
+    margin-top: 10px;
+}
+.rember .rember_left{
+    background: url(../images/left.png) no-repeat;
+    width: 45px;
+    height: 90px;
+    position: absolute;
+    left:0px;
+    top: 180px;
+}
+.rember_left:hover{
+    background:url(../images/leftRed.png) no-repeat;
+}
+.rember .rember_right{
+    background: url(../images/right.png) no-repeat;
+    width: 45px;
+    height: 90px;
+    position: absolute;
+    right:0px;
+    top: 180px;
+}
+.rember_right:hover{
+    background:url(../images/rightRed.png) no-repeat;
+}
+.rember .rember_span{
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 270px;
+}
+/* 竞拍记录&竞拍规则 */
+.big .competeRule{
+    width: 100%;
+    height: 680px;
+    background: url(../images/rule_bj.jpg) no-repeat center top;
+}
+.competeRule .focusOn{
+    width: 1140px;
+    height: 415px;
+    margin: 0 auto;
+    padding-top: 195px;
+}
+.competeRule .competeRule_left{
+    width: 415px;
+    height: 415px;
+    float: left;
+    background: url(../images/weibo_bj.jpg) no-repeat;
+}
+.competeRule .competeRule_left p{
+    margin-top: 52px;
+    margin-left: 40px;
+    margin-right: 50px;
+    line-height: 30px;
+    color: #563901;
+    font-size: 18px;
+}
+.competeRule_left .fast{
+    width: 190px;
+    height: 50px;
+    display: inline-block;
+    background: #ff4400;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 25px;
+    margin-top: 90px;
+    border-radius:6px;
+}
+.competeRule .competeRule_right{
+    width: 687px;
+    height: 405px;
+    float: right;
+    padding: 5px 0;
+    background: url(../images/rule_text_bj.jpg) no-repeat;
+}
+.competeRule_right .competeRule_right_p{
+    width: 610px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 27px;
+    color: #56302f;
+}

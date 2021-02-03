@@ -1,0 +1,99 @@
+h1,h2,h3,h4,h5,h6,p,dl,dd,body{margin: 0; font-size: 14px;}
+ul,ol{margin: 0; padding:0; list-style: none;}
+a{text-decoration: none; color: #333;}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.clearfix{*zoom:1;}
+/* 观点签到 */
+.big{
+    width: 100%;
+    background: #f3f3f3;
+}
+.main{
+    width: 729px;
+    margin: 0 auto;
+}
+/*这才是观点签到 */
+.main .header_left_imgLeft{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.main .header_left_imgRight{
+    float: right;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+/* 图 */
+.main .main_main{
+    width: 663px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    padding: 30px 32px 30px 32px;
+}
+.main_main .login_fast{
+    margin-top: 40px;
+    width: 662px;
+    height: 76px;
+    background: url(../images/OAlogin_banner.jpg) no-repeat;
+}
+.login_fast .login_fast_img{
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.opinion_arr .opinion_arr_li{
+    float: left;
+    /* width: 200px; */
+    margin-top: 30px;
+    border-right: 1px dashed #c9c9c9; 
+}
+.opinion_arr .opinion_arr_img{
+    margin-left: 22px;
+}
+.opinion_arr_li .h3{
+    margin-left: 24px;
+    font-size: 14px;
+
+} 
+.opinion_arr_li .p{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 24px;
+    color: #666;
+    width: 190px;
+    line-height: 20px;
+    display: inline-block;
+    text-indent: 2em;
+}
+.opinion_arr_li .a{
+    font-size: 12px;
+    color: #f35000;
+}
+.opinion_arr .a:hover{
+    text-decoration: underline;
+}
+.opinion_arr .border_none{
+    border-right: none;
+}
+/* 页脚 */
+.main_foot{
+    width: 727px;
+    height: 67px;
+    border:1px solid #e0e0e0;
+    border-top: none;
+    background: #fdfdfd;
+    margin-top: 
+}
+.main_foot .main_foot_p{
+    font-size: 14px;
+    color: #666;
+    text-align: right;
+    line-height: 67px;
+    margin-right: 20px;
+}

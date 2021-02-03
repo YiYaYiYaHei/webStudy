@@ -1,0 +1,33 @@
+.search {
+    width: 100%;
+    background: #fff;
+}
+
+.search h5 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: 5%;
+    color: #7f7f7f;
+    margin-bottom: 5%;
+}
+
+.ml5 {
+    margin-left: 5%;
+}
+
+.search .btn {
+    display: inline-block;
+    text-align: center;
+    border-radius: 0.6rem;
+    padding: 0.2rem 0.4rem;
+    font-size: 12px;
+    color: #000;
+    border: 1px solid #000;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.search .first {
+    color: #fc4524;
+    border: 1px solid #fc4524;
+}

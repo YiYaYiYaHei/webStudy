@@ -1,0 +1,49 @@
+{extends file="layout/layout.html"}
+
+{block name="title"}
+	管理员显示
+{/block}
+
+{block name="bigTitle"}
+	管理员显示
+{/block}
+
+{block name="body"}
+	<table class="table table-bordered">
+		<tr>
+			<th>ID</th>
+			<th>用户名</th>
+			<th>密码</th>
+			<th>操作</th>
+		</tr>
+
+	<!-- 使用循环遍历数据库数据 smarty中使用到php用{}括起来-->
+	{foreach $info as $k=>$v}
+		<tr id="tr{$v.id}">
+			<td>{$v.id}</td>
+			<td>{$v.username}</td>
+			<td>{$v.password}</td>
+			<td>
+				<a href="index.php?c=user&a=edit&id={$v.id}" class="btn btn-info">修改</a>
+				<a href="javascript:;" class="btn btn-danger" onclick="fun({$v.id})">删除</a>
+			</td>
+		</tr>
+	{/foreach}
+
+	</table>
+
+	<script>
+		{literal}
+			function fun(id){
+				$.get("index.php?c=user&a=del",{id:id},function(data){
+					if(data){
+						$('#tr'+id).remove();
+					}else{
+						alert("删除失败");
+					}
+				})
+			}
+		{/literal}
+	</script>
+
+{/block}

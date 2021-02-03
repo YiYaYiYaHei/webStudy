@@ -1,0 +1,27 @@
+{extends file="layout/layout.html"}
+
+{block name="title"}
+	修改首页
+{/block}
+
+{block name="bigTitle"}
+	修改首页
+{/block}
+
+{block name="body"}
+	<form action="index.php?c=user&a=doedit" method="post">
+		<div class="form-group">
+		    <input type="hidden" class="form-control" id="exampleInputEmail1" placeholder="id" name="id" value="{$res.id}">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Username:</label>
+	    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="username" name="username" value="{$res.username}">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword1">Password</label>
+	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" value="{$res.password}">
+	  </div>
+	  <button type="submit" class="btn btn-info">Submit</button>
+</form>
+
+{/block}
